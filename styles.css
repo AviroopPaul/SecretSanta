@@ -1,5 +1,6 @@
 
 
+
 body {
     margin: 0;
     font-family: 'Mountains of Christmas', serif;
@@ -57,8 +58,12 @@ main {
     margin: 0 auto;
 }
 
-h2 {
+h1 {
     font-size: 2.5em;
+    margin-bottom: 20px;
+}
+h3 {
+    font-size: 1.5em;
     margin-bottom: 20px;
 }
 
@@ -135,31 +140,38 @@ footer p {
     background-color: rgba(76, 220, 19, 0.464); /* Hover background color */
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 700px) {
     body {
         font-size: 16px; /* Adjust font size for smaller screens */
     }
 
     header {
-        padding: 10px; /* Decrease padding for the header on smaller screens */
+        padding: 5px; /* Decrease padding for the header on smaller screens */
+        font-size: 12px;
     }
 
-    h2 {
-        font-size: 1.5em; /* Decrease font size for h2 on smaller screens */
+    h1 {
+        font-size: 30px; /* Decrease font size for h2 on smaller screens */
         margin-bottom: 10px; /* Decrease margin for h2 on smaller screens */
+        padding: 5px;
+    }
+    h3 {
+        font-size: 20px; /* Decrease font size for h2 on smaller screens */
+        margin-bottom: 10px; /* Decrease margin for h2 on smaller screens */
+        padding: 5px;
     }
 
     footer {
         font-size: 20px; /* Adjust font size for the footer on smaller screens */
         padding: 5px; /* Decrease padding for the footer on smaller screens */
     }
-
     /* Adjust snowflake size for smaller screens */
     .snowflake {
         width: 8px;
         height: 8px;
     }
 }
+
 
 /* Add more .snowflakeN classes for additional snowflakes */
 
