@@ -1,0 +1,140 @@
+
+
+body {
+    margin: 0;
+    font-family: 'Mountains of Christmas', serif;
+    font-size: 20px;
+    overflow: hidden;
+}
+
+.container {
+    position: relative;
+    height: 100vh;
+}
+
+header {
+    background-color: rgba(128, 23, 0, 0.8); /* Semi-transparent green */
+    color: rgb(255, 255, 255); /* Subtle maroon-red text */
+    padding: 20px;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1; /* Ensure header is above the background image */
+}
+
+main {
+    position: relative;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 0; /* Ensure content is below the background image */
+}
+
+.background-image {
+    background-image: url('https://images.unsplash.com/photo-1512389142860-9c449e58a543?q=80&w=3269&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); /* Replace with your background image */
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    filter: brightness(0.6); /* Adjust as needed for text visibility */
+    z-index: -1; /* Place background image below content */
+}
+
+.content {
+    text-align: center;
+    color: #ffffff;
+    z-index: 1; /* Ensure content is above the background image */
+}
+
+.centered-text {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+footer {
+    /* font-family:'Times New Roman', Times, serif; */
+    font-size: 30px;
+    background-color: rgba(17, 68, 31, 0.6); /* Slightly transparent */
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Add these styles to your existing styles.css file */
+
+/* Snowflake animation */
+@keyframes snowfall {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(100vh);
+    }
+}
+
+/* Styling for snowflakes */
+.snowflake {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background-color: #fff;
+    border-radius: 50%;
+    animation: snowfall linear infinite;
+    animation-duration: 5s; /* Adjust animation duration as needed */
+}
+
+/* Positioning of snowflakes */
+.snowflake1 { top: -10px; left: 10%; animation-delay: 0s; }
+.snowflake2 { top: -20px; left: 20%; animation-delay: 1s; }
+.snowflake3 { top: -15px; left: 30%; animation-delay: 2s; }
+.snowflake4 { top: -5px; left: 40%; animation-delay: 3s; }
+.snowflake5 { top: -25px; left: 50%; animation-delay: 4s; }
+.snowflake6 { top: -30px; left: 60%; animation-delay: 5s; }
+.snowflake7 { top: -12px; left: 70%; animation-delay: 6s; }
+.snowflake8 { top: -18px; left: 80%; animation-delay: 7s; }
+.snowflake9 { top: -8px; left: 90%; animation-delay: 8s; }
+.snowflake10 { top: -22px; left: 100%; animation-delay: 9s; }
+
+/* Add these styles to your existing styles.css file */
+
+/* Centered styling for audio control */
+.audio-control {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#playButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: 'Arial', sans-serif; /* Use the same font as the body */
+    background-color: rgba(238, 37, 11, 0.123); /* Transparent background */
+    border: 1px solid #ccc;
+    border-radius: 10px; /* Rounded corners */
+}
+
+#playButton:hover {
+    background-color: rgba(76, 220, 19, 0.464); /* Hover background color */
+}
+
+
+/* Add more .snowflakeN classes for additional snowflakes */
+
