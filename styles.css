@@ -135,6 +135,31 @@ footer p {
     background-color: rgba(76, 220, 19, 0.464); /* Hover background color */
 }
 
+@media only screen and (max-width: 767px) {
+    body {
+        font-size: 16px; /* Adjust font size for smaller screens */
+    }
+
+    header {
+        padding: 10px; /* Decrease padding for the header on smaller screens */
+    }
+
+    h2 {
+        font-size: 1.5em; /* Decrease font size for h2 on smaller screens */
+        margin-bottom: 10px; /* Decrease margin for h2 on smaller screens */
+    }
+
+    footer {
+        font-size: 20px; /* Adjust font size for the footer on smaller screens */
+        padding: 5px; /* Decrease padding for the footer on smaller screens */
+    }
+
+    /* Adjust snowflake size for smaller screens */
+    .snowflake {
+        width: 8px;
+        height: 8px;
+    }
+}
 
 /* Add more .snowflakeN classes for additional snowflakes */
 
